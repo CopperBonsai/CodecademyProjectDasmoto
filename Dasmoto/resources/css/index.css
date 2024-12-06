@@ -26,7 +26,14 @@ nav h1 {
     font-weight: bold;
     color: khaki;
     text-align: center;
-    background-image:  url("./resources/images/pattern.jpeg");
+    background-image:  url("/resources/images/pattern.jpeg");
+    /* or alternatively:
+    background-image: url("./../images/pattern.jpeg");
+    if you have to use self-located relative-paths aka starting from the position
+    where your actual file is in.
+    In most cases the term relative-paths when given in instructions/tutorials
+    refers to the root-relative-path aka /resources/images/pattern.jpeg
+    */
     overflow: hidden;
     background-repeat: none;
 }
